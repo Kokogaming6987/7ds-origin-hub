@@ -686,3 +686,432 @@ a{text-decoration:none;color:inherit;transition:all 0.2s}
     grid-template-columns: 1fr;
   }
 }
+
+/* =====================================
+   DETAIL PERSONNAGES (characters.html)
+   ===================================== */
+.filters-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.filter-group label {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+.filter-group select {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+.char-card-detail {
+    background: linear-gradient(145deg, rgba(30,30,35,0.8), rgba(25,25,30,0.9));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.char-card-detail:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255,255,255,0.15);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.4);
+}
+.rarity-badge {
+    display: inline-block;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.rarity-ssr { background: linear-gradient(135deg, #ffd700, #ff8c00); color: #000; }
+.rarity-sr { background: linear-gradient(135deg, #a855f7, #7c3aed); color: #fff; }
+.char-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem auto;
+    border: 4px solid rgba(255,255,255,0.1);
+}
+.char-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.char-info {
+    text-align: center;
+    padding: 0 1.5rem 1rem;
+}
+.char-name {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.char-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+.elem { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.elem.fire { background: #f97316; }
+.elem.water { background: #06b6d4; }
+.elem.earth { background: #84cc16; }
+.elem.light { background: #eab308; }
+.elem.dark { background: #7c3aed; }
+.elem.wind { background: #22c55e; }
+.elem.cold { background: #06b6d4; }
+.elem.lightning { background: #eab308; }
+.char-role {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+}
+.char-stats {
+    padding: 1rem 1.5rem;
+}
+.stat-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+}
+.stat-bar span {
+    min-width: 30px;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+.stat-bar .bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.stat-bar .fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+.stat-bar .fill.atk { background: linear-gradient(90deg, #ef4444, #f97316); }
+.stat-bar .fill.def { background: linear-gradient(90deg, #3a7bc8, #4a90d9); }
+.stat-bar .fill.spd { background: linear-gradient(90deg, #22c55e, #4ecdc4); }
+.stat-bar .fill.hp { background: linear-gradient(90deg, #6b7280, #9ca3af); }
+.card-footer {
+    padding: 1rem 1.5rem 1.5rem;
+}
+.details-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.details-btn:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: var(--accent);
+}
+/* =====================================
+   GUIDES SECTION (guide.html)
+   ===================================== */
+.guides-section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.guides-section h2 {
+    color: var(--text-primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--accent);
+}
+.guide-card {
+    background: linear-gradient(145deg, rgba(30,30,35,0.8), rgba(25,25,30,0.9));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+.guide-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255,255,255,0.15);
+}
+.guide-card h3 {
+    color: var(--accent);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.guide-card .guide-content {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+.guide-card .guide-content p {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 3px solid rgba(99,102,241,0.3);
+}
+.guide-card .guide-content p strong {
+    color: var(--text-primary);
+}
+.guide-card .guide-content ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.guide-card .guide-content li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+.note {
+    background: rgba(99,102,241,0.1);
+    border-left: 4px solid var(--accent);
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+/* =====================================
+   CODES SECTION (codes.html)
+   ===================================== */
+.codes-section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.codes-section h2 {
+    color: var(--text-primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--accent);
+}
+.codes-table {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+.codes-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(145deg, rgba(30,30,35,0.8), rgba(25,25,30,0.9));
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.codes-table thead {
+    background: rgba(0,0,0,0.3);
+}
+.codes-table th {
+    padding: 1rem;
+    text-align: left;
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.codes-table td {
+    padding: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+.codes-table tr:hover {
+    background: rgba(255,255,255,0.02);
+}
+.codes-table code {
+    background: rgba(99,102,241,0.15);
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-family: monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.code-text {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.code-text:hover {
+    background: rgba(99,102,241,0.25);
+    color: var(--accent);
+}
+.copy-btn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.copy-btn:hover {
+    background: var(--accent-glow);
+    transform: translateY(-1px);
+}
+.status {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.status.active {
+    background: rgba(34,197,94,0.15);
+    color: #22c55e;
+}
+.status.expired {
+    background: rgba(239,68,68,0.15);
+    color: #ef4444;
+}
+.codes-table table.expired td code {
+    opacity: 0.5;
+    background: rgba(255,255,255,0.06);
+}
+.code-info {
+    background: linear-gradient(145deg, rgba(30,30,35,0.8), rgba(25,25,30,0.9));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+.code-info h3 {
+    color: var(--accent);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.code-info ol {
+    margin-left: 1.5rem;
+    color: var(--text-secondary);
+}
+.code-info li {
+    margin-bottom: 0.5rem;
+}
+.code-info .note {
+    margin-top: 1rem;
+}
+
+/* Characters detail content */
+.char-desc {
+    padding: 0 1.5rem 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 1rem;
+}
+.char-desc p {
+    margin-bottom: 0.5rem;
+}
+.card-build {
+    padding: 0 1.5rem 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 1rem;
+}
+.card-build h4 {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.card-build p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+.card-build p strong {
+    color: var(--text-primary);
+}
+
+/* Footer inline layout */
+footer {
+    background: linear-gradient(180deg, rgba(10,10,12,0.8), #0a0a0c);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.footer-left, .footer-center, .footer-right {
+    text-align: center;
+}
+.footer-left .logo {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.footer-left p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+.footer-center h4, .footer-right h4 {
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.footer-center ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
+    list-style: none;
+    padding: 0;
+}
+.footer-center li a {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+.footer-center li a:hover {
+    color: var(--accent);
+}
+.element-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.element-badges span {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.4);
+    font-size: 0.8rem;
+}
+.footer-bottom p {
+    margin-bottom: 0.5rem;
+}
