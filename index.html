@@ -1,166 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7DS Origin Hub - Le Wiki Complet</title>
-    <meta name="description" content="Wiki complet et guide pour Seven Deadly Sins: Origin - Tier lists, builds personnages, equipes, systeme de combat">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7DS Origin Hub - Base de données & Wiki</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="app-container">
     <aside class="sidebar">
-        <div class="sidebar-header">
-            <a href="index.html" class="logo">
-                <span class="logo-icon">7DS</span>
-                <span class="logo-text">Origin Hub</span>
-            </a>
-            <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
-        </div>
-        <nav class="sidebar-nav">
-            <a href="index.html" class="nav-item active"><span>🏠</span> Accueil</a>
-            <a href="tierlist.html" class="nav-item"><span>📊</span> Tier List</a>
-            <a href="characters.html" class="nav-item"><span>🎭</span> Personnages</a>
-            <a href="teams.html" class="nav-item"><span>⚔️</span> Equipes</a>
-            <a href="guide.html" class="nav-item"><span>📖</span> Guides</a>
-            <a href="codes.html" class="nav-item"><span>🎁</span> Codes Redeem</a>
-        </nav>
-        <div class="sidebar-footer">
-            <div class="discord-link">
-                <span>💬</span> Rejoignez Discord
-            </div>
-        </div>
+      <div class="logo-section">
+        <div class="logo-text">7DS Origin Hub</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item active">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-text">Accueil</span>
+        </a>
+        <a href="tierlist.html" class="nav-item">
+          <span class="nav-icon">📊</span>
+          <span class="nav-text">Tier List</span>
+        </a>
+        <a href="characters.html" class="nav-item">
+          <span class="nav-icon">👤</span>
+          <span class="nav-text">Personnages</span>
+        </a>
+        <a href="teams.html" class="nav-item">
+          <span class="nav-icon">⚔️</span>
+          <span class="nav-text">Equipes</span>
+        </a>
+        <a href="guide.html" class="nav-item">
+          <span class="nav-icon">📖</span>
+          <span class="nav-text">Guides</span>
+        </a>
+        <a href="codes.html" class="nav-item">
+          <span class="nav-icon">🎁</span>
+          <span class="nav-text">Codes</span>
+        </a>
+      </nav>
     </aside>
 
+    <main class="main-content">
+      <header class="hero">
+        <h1 class="hero-title">Seven Deadly Sins: Origin</h1>
+        <p class="hero-subtitle">La base de données ultime pour le prochain chef-d'œuvre de Netmarble. Guides, Tier Lists et plus encore.</p>
+      </header>
 
-      <main class="main-content">
-        <header class="hero">
-            <div class="hero-content">
-                <h1>7DS Origin Hub</h1>
-                <p class="hero-subtitle">Le wiki et database complet pour Seven Deadly Sins: Origin</p>
-                <div class="hero-buttons">
-                    <a href="tierlist.html" class="btn btn-primary">Voir la Tier List</a>
-                    <a href="characters.html" class="btn btn-secondary">Tous les Personnages</a>
-                </div>
-            </div>
-        </header>
-                
-        <section class="quick-access">
-            <h2>Acces Rapide</h2>
-            <div class="quick-cards">
-                <a href="tierlist.html" class="quick-card">
-                    <span class="card-icon">🏆</span>
-                    <h3>Tier List</h3>
-                    <p>Classement complet des personnages par element</p>
-                </a>
-                <a href="teams.html" class="quick-card">
-                    <span class="card-icon">⚔️</span>
-                    <h3>Guides Teams</h3>
-                    <p>Meilleures compositions d'equipe par element</p>
-                </a>
-                <a href="characters.html" class="quick-card">
-                    <span class="card-icon">🎭</span>
-                    <h3>Personnages</h3>
-                    <p>Tous les personnages SSR et SR avec builds</p>
-                </a>
-                <a href="guide.html" class="quick-card">
-                    <span class="card-icon">📚</span>
-                    <h3>Guides Combat</h3>
-                    <p>Systeme Elemental Burst et synergies</p>
-                </a>
-            </div>
-        </section>
-        
-        <section class="tier-preview">
-            <h2>Tier List Resume (Version 1.0)</h2>
-            <div class="tier-grid">
-                <div class="tier-row tier-s">
-                    <span class="tier-label">S</span>
-                    <div class="tier-chars">
-                        <span class="char-pill">Meliodas</span>
-                        <span class="char-pill">Diane</span>
-                        <span class="char-pill">Jericho</span>
-                        <span class="char-pill">Tristan</span>
-                        <span class="char-pill">Elaine</span>
-                    </div>
-                </div>
-                <div class="tier-row tier-a">
-                    <span class="tier-label">A</span>
-                    <div class="tier-chars">
-                        <span class="char-pill">King</span>
-                        <span class="char-pill">Hendrickson</span>
-                        <span class="char-pill">Howzer</span>
-                        <span class="char-pill">Drake</span>
-                    </div>
-                </div>
-                <div class="tier-row tier-b">
-                    <span class="tier-label">B</span>
-                    <div class="tier-chars">
-                        <span class="char-pill">Mannie</span>
-                        <span class="char-pill">Tioreh</span>
-                        <span class="char-pill">Guila</span>
-                        <span class="char-pill">Slater</span>
-                    </div>
-                </div>
-                <div class="tier-row tier-c">
-                    <span class="tier-label">C</span>
-                    <div class="tier-chars">
-                        <span class="char-pill">Griamore</span>
-                        <span class="char-pill">Dreyfus</span>
-                        <span class="char-pill">Gilthunder</span>
-                        <span class="char-pill">Bug</span>
-                    </div>
-                </div>
-            </div>
-            <a href="tierlist.html" class="btn btn-outline">Voir la Tier List Complete</a>
-        </section>
-        
-        <section class="combat-guide-preview">
-            <h2>Systeme de Combat</h2>
-            <div class="guide-grid">
-                <div class="guide-item">
-                    <h3>🔥 Fire Burst</h3>
-                    <p>Augmente les degats de tous les membres de l'equipe sur la cible affectee.</p>
-                </div>
-                <div class="guide-item">
-                    <h3>❄️ Cold Burst</h3>
-                    <p>Applique Chill, Freeze au bout de 10 stacks. Degats brisent le gel.</p>
-                </div>
-                <div class="guide-item">
-                    <h3>🌿 Earth Burst</h3>
-                    <p>Barriere immédiate + degats augmentes en stack jusqu'a 5 fois.</p>
-                </div>
-                <div class="guide-item">
-                    <h3>⚡ Lightning Burst</h3>
-                    <p>Degats de zone augmentes, excellent contre groupes d'ennemis.</p>
-                </div>
-                <div class="guide-item">
-                    <h3>💨 Wind Burst</h3>
-                    <p>Inflict Stagger et augmente CRIT sur allies.</p>
-                </div>
-                <div class="guide-item">
-                    <h3>🌑 Darkness Burst</h3>
-                    <p>Reduc defense Darkness. Se declenche apres un autre burst.</p>
-                </div>
-                <div class="guide-item">
-                    <h3>✨ Holy</h3>
-                    <p>Contribue au gauge de burst sans effet propre. Element universel.</p>
-                </div>
-                <div class="guide-item">
-                    <h3>⚔️ Physical</h3>
-                    <p>Contribue au gauge de burst sans effet propre.</p>
-                </div>
-            </div>
-            <a href="guide.html" class="btn btn-outline">Voir le Guide Complet</a>
-        </section>
-        
-        <footer class="site-footer">
-            <p>7DS Origin Hub - Fan site non officiel pour Seven Deadly Sins: Origin</p>
-            <p>© 2026 Kokogaming6987 - Inspiration: Prydwen.gg</p>
-        </footer>
+      <section class="quick-access">
+        <div class="section-header">
+          <h2 class="section-title">Accès Rapide</h2>
+        </div>
+        <div class="grid">
+          <a href="tierlist.html" class="card">
+            <div class="card-icon">📈</div>
+            <h3 class="card-title">Tier List Meta</h3>
+            <p class="card-desc">Les meilleurs personnages classés par rareté et rôle dans le meta actuel.</p>
+          </a>
+          <a href="teams.html" class="card">
+            <div class="card-icon">🛡️</div>
+            <h3 class="card-title">Compositions d'Equipe</h3>
+            <p class="card-desc">Découvrez les synergies optimales pour dominer le PvE et le PvP.</p>
+          </a>
+          <a href="characters.html" class="card">
+            <div class="card-icon">🔍</div>
+            <h3 class="card-title">Base de Données</h3>
+            <p class="card-desc">Consultez les statistiques et compétences détaillées de chaque héros.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="latest-news" style="margin-top: 3rem;">
+        <div class="section-header">
+          <h2 class="section-title">Dernières Mises à Jour</h2>
+        </div>
+        <div class="card" style="width: 100%;">
+          <h3 class="card-title">Mise à jour v1.0 - Lancement du Wiki</h3>
+          <p class="card-desc">Nous avons ajouté les premières données concernant Meliodas, Elizabeth et les mécaniques de combat élémentaires.</p>
+        </div>
+      </section>
     </main>
-    <script src="app.js"></script>
+  </div>
 </body>
 </html>
- 
