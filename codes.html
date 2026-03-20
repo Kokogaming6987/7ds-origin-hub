@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes - 7DS Origin Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">
+            <i class="icon"></i> 7DS Origin Hub
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="tierlist.html">Tier List</a></li>
+            <li><a href="characters.html">Personnages</a></li>
+            <li><a href="teams.html">Equipes</a></li>
+            <li><a href="builds.html">Builds</a></li>
+            <li><a href="guide.html">Guides</a></li>
+            <li><a href="codes.html" class="active">Codes</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <section class="hero">
+            <h1>Codes de Bonus</h1>
+            <p>Codes actifs et expirees pour Seven Deadly Sins: Origin</p>
+        </section>
+
+        <section class="codes-section">
+            <h2>Codes Actifs</h2>
+            <div class="codes-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Recompense</th>
+                            <th>Expiration</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code class="code-text" onclick="copyCode('ORIGIN2024')">ORIGIN2024</code></td>
+                            <td>500 Diamants + 10 Tickets de Gacha</td>
+                            <td><span class="status active">Actif</span></td>
+                            <td><button class="copy-btn" onclick="copyCode('ORIGIN2024')">Copier</button></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code-text" onclick="copyCode('7DSORIGIN')">7DSORIGIN</code></td>
+                            <td>1000 Or + 5 Tickets de Gacha</td>
+                            <td><span class="status active">Actif</span></td>
+                            <td><button class="copy-btn" onclick="copyCode('7DSORIGIN')">Copier</button></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code-text" onclick="copyCode('MELIODAS')">MELIODAS</code></td>
+                            <td>Piece de personnage Meliodas x3</td>
+                            <td><span class="status active">Actif</span></td>
+                            <td><button class="copy-btn" onclick="copyCode('MELIODAS')">Copier</button></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code-text" onclick="copyCode('DIANEPOWER')">DIANEPOWER</code></td>
+                            <td>Piece de personnage Diane x3</td>
+                            <td><span class="status active">Actif</span></td>
+                            <td><button class="copy-btn" onclick="copyCode('DIANEPOWER')">Copier</button></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code-text" onclick="copyCode('SINSORIGIN')">SINSORIGIN</code></td>
+                            <td>200 Diamants + Stamina 50</td>
+                            <td><span class="status active">Actif</span></td>
+                            <td><button class="copy-btn" onclick="copyCode('SINSORIGIN')">Copier</button></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code-text" onclick="copyCode('JERICHO')">JERICHO</code></td>
+                            <td>Piece de personnage Jericho x3</td>
+                            <td><span class="status active">Actif</span></td>
+                            <td><button class="copy-btn" onclick="copyCode('JERICHO')">Copier</button></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code-text" onclick="copyCode('KINGFOREST')">KINGFOREST</code></td>
+                            <td>Piece de personnage King x3</td>
+                            <td><span class="status active">Actif</span></td>
+                            <td><button class="copy-btn" onclick="copyCode('KINGFOREST')">Copier</button></td>
+                        </tr>
+                        <tr>
+                            <td><code class="code-text" onclick="copyCode('WELCOME')">WELCOME</code></td>
+                            <td>300 Diamants</td>
+                            <td><span class="status active">Actif</span></td>
+                            <td><button class="copy-btn" onclick="copyCode('WELCOME')">Copier</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Codes Expirees</h2>
+            <div class="codes-table">
+                <table class="expired">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Recompense</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>LAUNCH2023</code></td>
+                            <td>1000 Diamants + 20 Tickets de Gacha</td>
+                            <td><span class="status expired">Expiré</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>BETABONUS</code></td>
+                            <td>500 Or + 5 Tickets de Gacha</td>
+                            <td><span class="status expired">Expiré</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>PREORDER</code></td>
+                            <td>Skin exclusive + 1000 Diamants</td>
+                            <td><span class="status expired">Expiré</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>ANNIVERSARY</code></td>
+                            <td>Piece legendaire x5</td>
+                            <td><span class="status expired">Expiré</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="code-info">
+                <h3>Comment utiliser les codes?</h3>
+                <ol>
+                    <li>Lancez Seven Deadly Sins: Origin</li>
+                    <li>Allez dans les Parametres (roue dentee en haut a droite)</li>
+                    <li>Cliquez sur "Code Redemption" ou "Echanger un code"</li>
+                    <li>Entrez le code dans le champ texte</li>
+                    <li>Validez et recevez vos recompenses dans votre boite mail du jeu</li>
+                </ol>
+                <p class="note">Note: Les codes sont sensibles a la casse. Utilisez exactement les majuscules/minuscules affiches.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-left">
+                <div class="logo">
+                    <i class="icon"></i> 7DS Origin Hub
+                </div>
+                <p>Guide fan-made pour Seven Deadly Sins: Origin</p>
+            </div>
+            <div class="footer-center">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="tierlist.html">Tier List</a></li>
+                    <li><a href="characters.html">Personnages</a></li>
+                    <li><a href="teams.html">Equipes</a></li>
+                    <li><a href="builds.html">Builds</a></li>
+                    <li><a href="guide.html">Guides</a></li>
+                    <li><a href="codes.html">Codes</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h4>Elements</h4>
+                <div class="element-badges">
+                    <span class="elem fire">Feu</span>
+                    <span class="elem water">Eaux</span>
+                    <span class="elem earth">Terre</span>
+                    <span class="elem light">Lumiere</span>
+                    <span class="elem dark">Obscurite</span>
+                    <span class="elem wind">Vent</span>
+                    <span class="elem cold">Froid</span>
+                    <span class="elem lightning">Foudre</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Ce site n'est pas affilie a Netmarble. Toutes les images et donnees appartiennent a leurs proprietaires respectifs.</p>
+                <p>&copy; 2026 7DS Origin Hub - v1.0</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function copyCode(code) {
+            navigator.clipboard.writeText(code);
+            alert('Code ' + code + ' copie dans le presse-papiers!');
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
