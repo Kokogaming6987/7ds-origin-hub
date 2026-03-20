@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tier List - 7DS Origin Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <span class="logo"><i class="icon">&#128274;</i> 7DS Origin</span>
+      <button class="close-btn" id="closeSidebar">&times;</button>
+    </div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Rechercher...">
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link"><span class="icon">&#127968;</span> Accueil</a>
+      <a href="tierlist.html" class="nav-link active"><span class="icon">&#127942;</span> Tier List</a>
+      <a href="teams.html" class="nav-link"><span class="icon">&#128101;</span> Equipes</a>
+      <a href="guide.html" class="nav-link"><span class="icon">&#128214;</span> Guides</a>
+      <a href="#" class="nav-link"><span class="icon">&#128142;</span> Materiels</a>
+      <a href="#" class="nav-link"><span class="icon">&#128248;</span> Events</a>
+      <a href="#" class="nav-link"><span class="icon">&#128200;</span> Calculateur</a>
+    </div>
+    <div class="sidebar-footer">
+      <span class="update-badge">Mise a jour: v1.0</span>
+    </div>
+  </nav>
+
+  <!-- Toggle button mobile -->
+  <button class="toggle-btn" id="toggleSidebar">&#9776;</button>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Tier List Complete</h1>
+      <p>Classement des meilleurs personnages de Seven Deadly Sins: Origin, mis a jour regulierement selon le meta actuel.</p>
+    </section>
+
+    <!-- Filters -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title"><span class="icon">&#128269;</span> Filtrer</h2>
+      </div>
+      <div class="tier-filters">
+        <button class="filter-btn active" data-tier="all">Tous</button>
+        <button class="filter-btn" data-tier="S">S</button>
+        <button class="filter-btn" data-tier="A">A</button>
+        <button class="filter-btn" data-tier="B">B</button>
+        <button class="filter-btn" data-tier="C">C</button>
+        <button class="filter-btn" data-tier="D">D</button>
+        <button class="filter-btn" data-element="all">Tous Elements</button>
+        <button class="filter-btn" data-element="fire">Feu</button>
+        <button class="filter-btn" data-element="water">Eau</button>
+        <button class="filter-btn" data-element="earth">Terre</button>
+        <button class="filter-btn" data-element="light">Lumiere</button>
+        <button class="filter-btn" data-element="dark">Obscurite</button>
+      </div>
+    </section>
+
+    <!-- Tier List Grid -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title"><span class="icon">&#127942;</span> Classement par Tier</h2>
+      </div>
+      <div class="tier-grid">
+          </div>
+</section>
+
+<!-- Character Cards -->
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title"><span class="icon">&#128142;</span> Personnels</h2>
+  </div>
+  <div class="character-grid">
+
+    <!-- S-Tier -->
+    <!-- Meliodas - S Tier -->
+    <div class="char-card tier-s" data-tier="S" data-element="dark">
+      <div class="card-header tier-badge">S</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350642372501209179/meliodas_7ds_origin.png" alt="Meliodas">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Meliodas</h3>
+        <div class="char-element">Obscurite</div>
+        <div class="char-weapons">
+          <span class="weapon">Epee Longue</span>
+          <span class="weapon">Hache</span>
+          <span class="weapon">Double Epées</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>DPS de base, energie demoniaque, degats massifs en burst. Peut etre contre avec sa special.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="meliodas">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Jericho - S Tier -->
+    <div class="char-card tier-s" data-tier="S" data-element="light">
+      <div class="card-header tier-badge">S</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350642645453692999/jericho_7ds_origin.png" alt="Jericho">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Jericho</h3>
+        <div class="char-element">Lumiere</div>
+        <div class="char-weapons">
+          <span class="weapon">Double Epées</span>
+          <span class="weapon">Lance</span>
+          <span class="weapon">Epee Longue</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Meilleure DPS du jeu. Freeze, teleporte derriere l'ennemi, boost gauge burst. Universelle.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="jericho">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Diane - S Tier -->
+    <div class="char-card tier-s" data-tier="S" data-element="earth">
+      <div class="card-header tier-badge">S</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350642969023557774/diane_7ds_origin.png" alt="Diane">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Diane</h3>
+        <div class="char-element">Terre</div>
+        <div class="char-weapons">
+          <span class="weapon">Marteau</span>
+          <span class="weapon">Gantelets</span>
+          <span class="weapon">Epee et Bouclier</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>DEF scaling, tank ultra durable. Taunt, immunite aux reactions en Heavy Metal. Indispensable.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="diane">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- A-Tier -->
+    <!-- King - A Tier -->
+    <div class="char-card tier-a" data-tier="A" data-element="earth">
+      <div class="card-header tier-badge a">A</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350643301866483752/king_7ds_origin.png" alt="King">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">King</h3>
+        <div class="char-element">Terre</div>
+        <div class="char-weapons">
+          <span class="weapon">Grimoire</span>
+          <span class="weapon">Baton</span>
+          <span class="weapon">Bouclier</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Soutien pur. Bouclier + healing, mark of the forest, barriere. Excellent avec Elaine.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="king">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Elaine - A Tier -->
+    <div class="char-card tier-a" data-tier="A" data-element="wind">
+      <div class="card-header tier-badge a">A</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350643593596833872/elaine_7ds_origin.png" alt="Elaine">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Elaine</h3>
+        <div class="char-element">Vent / Sacre / Terre</div>
+        <div class="char-weapons">
+          <span class="weapon">Baguette</span>
+          <span class="weapon">Baton</span>
+          <span class="weapon">Grimoire</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Soutien defense pur. Shields massifs, reduction degats, neutralise resistance burst. Parfaite avec Jericho.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="elaine">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Manny - A Tier -->
+    <div class="char-card tier-a" data-tier="A" data-element="cold">
+      <div class="card-header tier-badge a">A</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350643850045505654/manny_7ds_origin.png" alt="Manny">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Manny</h3>
+        <div class="char-element">Froid</div>
+        <div class="char-weapons">
+          <span class="weapon">Epee Longue</span>
+          <span class="weapon">Double Haches</span>
+          <span class="weapon">Arc</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Boost CRIT avec burst froid. Skill normal ameliore les attaques. DPS solide en debut.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="manny">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Howzer - A Tier -->
+    <div class="char-card tier-a" data-tier="A" data-element="wind">
+      <div class="card-header tier-badge a">A</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350644141527945236/howzer_7ds_origin.png" alt="Howzer">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Howzer</h3>
+        <div class="char-element">Vent</div>
+        <div class="char-weapons">
+          <span class="weapon">Epee Longue</span>
+          <span class="weapon">Double Epées</span>
+          <span class="weapon">Marteau</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Choix F2P top. Bleed sur attaques, boost degats, reduit soin ennemi. Simple a maitriser.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="howzer">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Hendrickson - A Tier -->
+    <div class="char-card tier-a" data-tier="A" data-element="dark">
+      <div class="card-header tier-badge a">A</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350644441793859734/hendrickson_7ds_origin.png" alt="Hendrickson">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Hendrickson</h3>
+        <div class="char-element">Obscurite</div>
+        <div class="char-weapons">
+          <span class="weapon">Sceptre</span>
+          <span class="weapon">Baton</span>
+          <span class="weapon">Double Epées</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Excellente synergie avec Meliodas. Boost degats Melio, sinon C-tier. Utilise uniquement avec Melio.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="hendrickson">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Guila - B Tier -->
+    <div class="char-card tier-b" data-tier="B" data-element="fire">
+      <div class="card-header tier-badge b">B</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350644701219299614/guila_7ds_origin.png" alt="Guila">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Guila</h3>
+        <div class="char-element">Feu</div>
+        <div class="char-weapons">
+          <span class="weapon">Epee et Bouclier</span>
+          <span class="weapon">Double Epées</span>
+          <span class="weapon">Arc</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Degats via Demon Form et Fire Burst. -50% cooldown sur crit. A utiliser avec soin.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="guila">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Drake - B Tier -->
+    <div class="char-card tier-b" data-tier="B" data-element="lightning">
+      <div class="card-header tier-badge b">B</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350644964243476644/drake_7ds_origin.png" alt="Drake">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Drake</h3>
+        <div class="char-element">Foudre</div>
+        <div class="char-weapons">
+          <span class="weapon">Epee Longue</span>
+          <span class="weapon">Hache</span>
+          <span class="weapon">Gantelets</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Degats foudre, augmente duration burst foudre. Synergie foudre limitee au launch.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="drake">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Slader - B Tier -->
+    <div class="char-card tier-b" data-tier="B" data-element="fire">
+      <div class="card-header tier-badge b">B</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350645210987024476/slader_7ds_origin.png" alt="Slader">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Slader</h3>
+        <div class="char-element">Feu / Physique</div>
+        <div class="char-weapons">
+          <span class="weapon">Epee Longue</span>
+          <span class="weapon">Gantelets</span>
+          <span class="weapon">Arc</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Degats feu/physique mais base degats faible. Potentiel limite sans build.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="slader">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Tristan - B Tier -->
+    <div class="char-card tier-b" data-tier="B" data-element="wind">
+      <div class="card-header tier-badge b">B</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350645461077102734/tristan_7ds_origin.png" alt="Tristan">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Tristan</h3>
+        <div class="char-element">Vent</div>
+        <div class="char-weapons">
+          <span class="weapon">Epee Longue</span>
+          <span class="weapon">Baton</span>
+          <span class="weapon">Arc</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Boost wind attack party, bleed special. Ultime augmente burst efficiency. Personnage clé de l'histoire.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="tristan">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- C-Tier -->
+    <!-- Bug - C Tier -->
+    <div class="char-card tier-c" data-tier="C" data-element="earth">
+      <div class="card-header tier-badge c">C</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350645714282168454/bug_7ds_origin.png" alt="Bug">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Bug</h3>
+        <div class="char-element">Terre</div>
+        <div class="char-weapons">
+          <span class="weapon">Hache</span>
+          <span class="weapon">Marteau</span>
+          <span class="weapon">Grimoire</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Polyvalent mais manque de specialisation. Bonne option debutante.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="bug">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Tioreh - C Tier -->
+    <div class="char-card tier-c" data-tier="C" data-element="light">
+      <div class="card-header tier-badge c">C</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350645962244718714/tioreh_7ds_origin.png" alt="Tioreh">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Tioreh</h3>
+        <div class="char-element">Lumiere</div>
+        <div class="char-weapons">
+          <span class="weapon">Double Epées</span>
+          <span class="weapon">Lance</span>
+          <span class="weapon">Arc</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Polyvalent mais sans vrai point fort. A remplacer rapidement.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="tioreh">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- D-Tier -->
+    <!-- Griamore - D Tier -->
+    <div class="char-card tier-d" data-tier="D" data-element="light">
+      <div class="card-header tier-badge d">D</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350646210464903484/griamore_7ds_origin.png" alt="Griamore">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Griamore</h3>
+        <div class="char-element">Lumiere</div>
+        <div class="char-weapons">
+          <span class="weapon">Epee et Bouclier</span>
+          <span class="weapon">Lance</span>
+          <span class="weapon">Bouclier</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Tank faible, degats limités. A éviter en fin game.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="griamore">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Dreydrin - D Tier -->
+    <div class="char-card tier-d" data-tier="D" data-element="dark">
+      <div class="card-header tier-badge d">D</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350646463464669294/dreydrin_7ds_origin.png" alt="Dreydrin">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Dreydrin</h3>
+        <div class="char-element">Obscurite</div>
+        <div class="char-weapons">
+          <span class="weapon">Grimoire</span>
+          <span class="weapon">Baton</span>
+          <span class="weapon">Sceptre</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Degats obscurs limités. Pas de synergie forte.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="dreydrin">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Dreyfus - D Tier -->
+    <div class="char-card tier-d" data-tier="D" data-element="dark">
+      <div class="card-header tier-badge d">D</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350646720780861564/dreyfus_7ds_origin.png" alt="Dreyfus">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Dreyfus</h3>
+        <div class="char-element">Obscurite</div>
+        <div class="char-weapons">
+          <span class="weapon">Gantelets</span>
+          <span class="weapon">Marteau</span>
+          <span class="weapon">Bouclier</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Tank avec peu d'impact. Utilité limitée.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="dreyfus">Voir les details</button>
+      </div>
+    </div>
+
+    <!-- Gilthunder - D Tier -->
+    <div class="char-card tier-d" data-tier="D" data-element="lightning">
+      <div class="card-header tier-badge d">D</div>
+      <div class="char-image">
+        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350646975479550082/gilthunder_7ds_origin.png" alt="Gilthunder">
+      </div>
+      <div class="char-info">
+        <h3 class="char-name">Gilthunder</h3>
+        <div class="char-element">Foudre</div>
+        <div class="char-weapons">
+          <span class="weapon">Epee Longue</span>
+          <span class="weapon">Double Epées</span>
+          <span class="weapon">Lance</span>
+        </div>
+      </div>
+      <div class="card-desc">
+        <p>Peu de dégats foudre. Synergie limitée avec Drake.</p>
+      </div>
+      <div class="card-footer">
+        <button class="details-btn" data-char="gilthunder">Voir les details</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <span class="logo"><i class="icon">&#128268;</i> 7DS ORIGIN HUB</span>
+      <p>Guide fan-made pour Seven Deadly Sins: Origin</p>
+    </div>
+    <div class="footer-center">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tierlist.html">Tier List</a></li>
+        <li><a href="teams.html">Equipes</a></li>
+        <li><a href="guide.html">Guides</a></li>
+      </ul>
+    </div>
+    <div class="footer-right">
+      <h4>Elements</h4>
+      <div class="element-badges">
+        <span class="elem fire">Feu</span>
+        <span class="elem water">Eau</span>
+        <span class="elem earth">Terre</span>
+        <span class="elem light">Lumiere</span>
+        <span class="elem dark">Obscurite</span>
+        <span class="elem wind">Vent</span>
+        <span class="elem cold">Froid</span>
+        <span class="elem lightning">Foudre</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Ce site n'est pas affilié à Netmarble. Toutes les images et données appartiennent a leurs propriétaires respectifs.</p>
+    <p>&copy; 2026 7DS Origin Hub - v1.0</p>
+  </div>
+</footer>
+
+<!-- Character Detail Modal -->
+<div id="charModal" class="modal">
+  <div class="modal-content">
+    <button class="modal-close" id="closeModal">&times;</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
