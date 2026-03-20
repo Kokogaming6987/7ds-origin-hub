@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnages - 7DS Origin Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <span class="logo"><i class="icon"></i> 7DS Origin</span>
+            <button class="close-btn" id="closeSidebar">&times;</button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Rechercher...">
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link"><span class="icon"></span> Accueil</a>
+            <a href="tierlist.html" class="nav-link"><span class="icon"></span> Tier List</a>
+            <a href="characters.html" class="nav-link active"><span class="icon"></span> Personnages</a>
+            <a href="teams.html" class="nav-link"><span class="icon"></span> Equipes</a>
+            <a href="builds.html" class="nav-link"><span class="icon"></span> Builds</a>
+            <a href="guide.html" class="nav-link"><span class="icon"></span> Guides</a>
+            <a href="codes.html" class="nav-link"><span class="icon"></span> Codes Redeem</a>
+        </div>
+        <div class="sidebar-footer">
+            <span class="update-badge">Mise a jour: v1.0</span>
+        </div>
+    </nav>
+    <button class="toggle-btn" id="toggleSidebar"></button>
+    <main class="main-content">
+        <section class="hero">
+            <h1>Tous les Personnages</h1>
+            <p>Databank complete de tous les personnages disponibles dans Seven Deadly Sins: Origin avec leurs builds optimaux.</p>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title"><span class="icon"></span> Filtrer</h2>
+            </div>
+            <div class="char-filters">
+                <button class="filter-btn active" data-rarity="all">Tous</button>
+                <button class="filter-btn" data-rarity="SSR">SSR</button>
+                <button class="filter-btn" data-rarity="SR">SR</button>
+                <button class="filter-btn" data-element="all">Tous Elements</button>
+                <button class="filter-btn" data-element="dark">Obscurite</button>
+                <button class="filter-btn" data-element="light">Lumiere</button>
+                <button class="filter-btn" data-element="earth">Terre</button>
+                <button class="filter-btn" data-element="wind">Vent</button>
+                <button class="filter-btn" data-element="fire">Feu</button>
+                <button class="filter-btn" data-element="lightning">Foudre</button>
+                <button class="filter-btn" data-element="cold">Froid</button>
+                <button class="filter-btn" data-element="holy">Sacre</button>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title"><span class="icon"></span> Personnages SSR</h2>
+            </div>
+            <div class="character-grid">
+                <!-- Meliodas - SSR Obscurite -->
+                <div class="char-card detail" data-rarity="SSR" data-element="dark">
+                    <div class="card-header"><span class="rarity-badge">SSR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350642372501209179/meliodas_7ds_origin.png" alt="Meliodas">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Meliodas</h3>
+                        <div class="char-element"><span class="elem dark"></span> Obscurite</div>
+                        <div class="char-role">DPS / Demon</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Le capitaine des 7DS. DPS demoniaque ultra puissant avec energie demoniaque.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:95%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Epee Longue / Double Epées</p>
+                        <p><strong>Artefacts:</strong> 4x Set Dommage + 2x Set Critique</p>
+                        <p><strong>Stats Prioritaires:</strong> ATK% > Dommage Critique > Vitesse</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="meliodas">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Jericho - SSR Lumiere -->
+                <div class="char-card detail" data-rarity="SSR" data-element="light">
+                    <div class="card-header"><span class="rarity-badge">SSR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350642645453692999/jericho_7ds_origin.png" alt="Jericho">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Jericho</h3>
+                        <div class="char-element"><span class="elem light"></span> Lumiere</div>
+                        <div class="char-role">DPS / Assassin</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Meilleure DPS du jeu. Freeze, teleportation et boost de gauge burst.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:100%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Double Epées / Epee Longue</p>
+                        <p><strong>Artefacts:</strong> 4x Set Dommage Critique + 2x Set Vitesse</p>
+                        <p><strong>Stats Prioritaires:</strong> Dommage Critique > Vitesse > ATK%</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="jericho">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Diane - SSR Terre -->
+                <div class="char-card detail" data-rarity="SSR" data-element="earth">
+                    <div class="card-header"><span class="rarity-badge">SSR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350642969023557774/diane_7ds_origin.png" alt="Diane">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Diane</h3>
+                        <div class="char-element"><span class="elem earth"></span> Terre</div>
+                        <div class="char-role">Tank / DEF Scaling</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Tank ultra durable avec DEF scaling. Taunt et immunite aux reactions en Heavy Metal.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:100%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:50%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:95%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Marteau / Epee et Bouclier</p>
+                        <p><strong>Artefacts:</strong> 4x Set Vie + 2x Set Defense</p>
+                        <p><strong>Stats Prioritaires:</strong> DEF% > HP% > Vitesse</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="diane">Voir plus</button>
+                    </div>
+                </div>
+                <!-- King - SSR Terre -->
+                <div class="char-card detail" data-rarity="SSR" data-element="earth">
+                    <div class="card-header"><span class="rarity-badge">SSR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350643301866483752/king_7ds_origin.png" alt="King">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">King</h3>
+                        <div class="char-element"><span class="elem earth"></span> Terre</div>
+                        <div class="char-role">Support / Healer</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Soutien pur avec bouclier et healing. Mark of the Forest et barriere.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:50%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Grimoire / Baton</p>
+                        <p><strong>Artefacts:</strong> 4x Set Heal + 2x Set Vitesse</p>
+                        <p><strong>Stats Prioritaires:</strong> HP% > Vitesse > Heal Boost</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="king">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Elaine - SSR Vent/Sacre/Terre -->
+                <div class="char-card detail" data-rarity="SSR" data-element="wind">
+                    <div class="card-header"><span class="rarity-badge">SSR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350643593596833872/elaine_7ds_origin.png" alt="Elaine">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Elaine</h3>
+                        <div class="char-element"><span class="elem wind"></span> Vent / Sacre / Terre</div>
+                        <div class="char-role">Support Defense</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Soutien defense pur. Shields massifs et reduction de degats. Parfaite avec Jericho.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:45%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Baguette / Grimoire</p>
+                        <p><strong>Artefacts:</strong> 4x Set Defense + 2x Set Vitesse</p>
+                        <p><strong>Stats Prioritaires:</strong> DEF% > Vitesse > HP%</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="elaine">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Hendrickson - SSR Obscurite -->
+                <div class="char-card detail" data-rarity="SSR" data-element="dark">
+                    <div class="card-header"><span class="rarity-badge">SSR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350644441793859734/hendrickson_7ds_origin.png" alt="Hendrickson">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Hendrickson</h3>
+                        <div class="char-element"><span class="elem dark"></span> Obscurite</div>
+                        <div class="char-role">DPS Support</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Excellente synergie avec Meliodas. Boost des degats de Melio. Inutile sans lui.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:80%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Sceptre / Double Epées</p>
+                        <p><strong>Artefacts:</strong> 4x Set Dommage + 2x Set Vitesse</p>
+                        <p><strong>Stats Prioritaires:</strong> ATK% > Vitesse > Dommage Critique</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="hendrickson">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Manny - SR Froid -->
+                <div class="char-card detail" data-rarity="SR" data-element="cold">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350643850045505654/manny_7ds_origin.png" alt="Manny">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Manny</h3>
+                        <div class="char-element"><span class="elem cold"></span> Froid</div>
+                        <div class="char-role">DPS / Cold Specialist</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Boost CRIT avec burst froid. Skill normal ameliore les attaques. Solide en debut.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:75%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Epee Longue / Double Haches</p>
+                        <p><strong>Artefacts:</strong> 4x Set Critique + 2x Set Dommage</p>
+                        <p><strong>Stats Prioritaires:</strong> Dommage Critique > ATK% > Vitesse</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="manny">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Howzer - SR Vent -->
+                <div class="char-card detail" data-rarity="SR" data-element="wind">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350644141527945236/howzer_7ds_origin.png" alt="Howzer">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Howzer</h3>
+                        <div class="char-element"><span class="elem wind"></span> Vent</div>
+                        <div class="char-role">DPS F2P</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Choix F2P top. Bleed sur attaques, boost degats, reduit soin ennemi.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:78%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:72%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:68%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Epee Longue / Double Epées</p>
+                        <p><strong>Artefacts:</strong> 4x Set Saignement + 2x Set Dommage</p>
+                        <p><strong>Stats Prioritaires:</strong> ATK% > Saignement > Dommage Critique</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="howzer">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Guila - SR Feu -->
+                <div class="char-card detail" data-rarity="SR" data-element="fire">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350644701219299614/guila_7ds_origin.png" alt="Guila">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Guila</h3>
+                        <div class="char-element"><span class="elem fire"></span> Feu</div>
+                        <div class="char-role">DPS Feu</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Degats via Demon Form et Fire Burst. -50% cooldown sur crit.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:72%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:55%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:68%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Double Epées / Arc</p>
+                        <p><strong>Artefacts:</strong> 4x Set Feu + 2x Set Critique</p>
+                        <p><strong>Stats Prioritaires:</strong> Dommage Critique > ATK% > Feu</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="guila">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Drake - SR Foudre -->
+                <div class="char-card detail" data-rarity="SR" data-element="lightning">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350644964243476644/drake_7ds_origin.png" alt="Drake">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Drake</h3>
+                        <div class="char-element"><span class="elem lightning"></span> Foudre</div>
+                        <div class="char-role">DPS Foudre</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Degats foudre, augmente duration burst foudre. Synergie foudre limitee.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:62%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:58%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Epee Longue / Hache</p>
+                        <p><strong>Artefacts:</strong> 4x Set Foudre + 2x Set Dommage</p>
+                        <p><strong>Stats Prioritaires:</strong> ATK% > Foudre > Vitesse</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="drake">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Slader - SR Feu/Physique -->
+                <div class="char-card detail" data-rarity="SR" data-element="fire">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350645210987024476/slader_7ds_origin.png" alt="Slader">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Slader</h3>
+                        <div class="char-element"><span class="elem fire"></span> Feu / Physique</div>
+                        <div class="char-role">DPS Feu</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Degats feu/physique mais base degats faible. Potentiel limite sans build.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:68%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Epee Longue / Gantelets</p>
+                        <p><strong>Artefacts:</strong> 4x Set Feu + 2x Set Physique</p>
+                        <p><strong>Stats Prioritaires:</strong> Feu > ATK% > Physique</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="slader">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Tristan - SR Vent -->
+                <div class="char-card detail" data-rarity="SR" data-element="wind">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350645461077102734/tristan_7ds_origin.png" alt="Tristan">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Tristan</h3>
+                        <div class="char-element"><span class="elem wind"></span> Vent</div>
+                        <div class="char-role">Support DPS</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Boost wind attack party, bleed special. Ultime augmente burst efficiency.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:58%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:72%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:62%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Epee Longue / Baton</p>
+                        <p><strong>Artefacts:</strong> 4x Set Vent + 2x Set Vitesse</p>
+                        <p><strong>Stats Prioritaires:</strong> Vitesse > ATK% > Vent</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="tristan">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Tioreh - SR Lumiere -->
+                <div class="char-card detail" data-rarity="SR" data-element="light">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350645962244718714/tioreh_7ds_origin.png" alt="Tioreh">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Tioreh</h3>
+                        <div class="char-element"><span class="elem light"></span> Lumiere</div>
+                        <div class="char-role">Polyvalent</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Polyvalent mais sans vrai point fort. A remplacer rapidement.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:58%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:62%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:55%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Double Epées / Lance</p>
+                        <p><strong>Artefacts:</strong> 4x Set Lumiere + 2x Set Vitesse</p>
+                        <p><strong>Stats Prioritaires:</strong> Vitesse > ATK% > Lumiere</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="tioreh">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Bug - SR Terre -->
+                <div class="char-card detail" data-rarity="SR" data-element="earth">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350645714282168454/bug_7ds_origin.png" alt="Bug">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Bug</h3>
+                        <div class="char-element"><span class="elem earth"></span> Terre</div>
+                        <div class="char-role">Polyvalent</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Polyvalent mais manque de specialisation. Bonne option debutante.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:58%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:55%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:62%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Hache / Marteau</p>
+                        <p><strong>Artefacts:</strong> 4x Set Terre + 2x Set Vie</p>
+                        <p><strong>Stats Prioritaires:</strong> DEF% > HP% > ATK%</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="bug">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Griamore - SR Lumiere -->
+                <div class="char-card detail" data-rarity="SR" data-element="light">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350646210464903484/griamore_7ds_origin.png" alt="Griamore">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Griamore</h3>
+                        <div class="char-element"><span class="elem light"></span> Lumiere</div>
+                        <div class="char-role">Tank</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Tank faible, degats limités. A éviter en fin game.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:45%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:48%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:72%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Epee et Bouclier</p>
+                        <p><strong>Artefacts:</strong> 4x Set Vie + 2x Set Defense</p>
+                        <p><strong>Stats Prioritaires:</strong> DEF% > HP%</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="griamore">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Dreyfus - SR Obscurite -->
+                <div class="char-card detail" data-rarity="SR" data-element="dark">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350646720780861564/dreyfus_7ds_origin.png" alt="Dreyfus">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Dreyfus</h3>
+                        <div class="char-element"><span class="elem dark"></span> Obscurite</div>
+                        <div class="char-role">Tank</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Tank avec peu d'impact. Utilité limitée.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:48%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:68%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:45%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:70%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Gantelets / Bouclier</p>
+                        <p><strong>Artefacts:</strong> 4x Set Defense + 2x Set Obscurite</p>
+                        <p><strong>Stats Prioritaires:</strong> DEF% > Obscurite</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="dreyfus">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Dreydrin - SR Obscurite -->
+                <div class="char-card detail" data-rarity="SR" data-element="dark">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350646463464669294/dreydrin_7ds_origin.png" alt="Dreydrin">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Dreydrin</h3>
+                        <div class="char-element"><span class="elem dark"></span> Obscurite</div>
+                        <div class="char-role">Mage Obscurite</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Degats obscurs limités. Pas de synergie forte.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:55%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:50%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:58%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:52%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Grimoire / Sceptre</p>
+                        <p><strong>Artefacts:</strong> 4x Set Obscurite + 2x Set Dommage</p>
+                        <p><strong>Stats Prioritaires:</strong> Obscurite > ATK%</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="dreydrin">Voir plus</button>
+                    </div>
+                </div>
+                <!-- Gilthunder - SR Foudre -->
+                <div class="char-card detail" data-rarity="SR" data-element="lightning">
+                    <div class="card-header"><span class="rarity-badge sr">SR</span></div>
+                    <div class="char-image">
+                        <img src="https://cdn.discordapp.com/attachments/1348697947614597192/1350646975479550082/gilthunder_7ds_origin.png" alt="Gilthunder">
+                    </div>
+                    <div class="char-info">
+                        <h3 class="char-name">Gilthunder</h3>
+                        <div class="char-element"><span class="elem lightning"></span> Foudre</div>
+                        <div class="char-role">DPS Foudre</div>
+                    </div>
+                    <div class="card-desc">
+                        <p>Peu de dégats foudre. Synergie limitée avec Drake.</p>
+                    </div>
+                    <div class="char-stats">
+                        <div class="stat-bar"><span>ATK</span><div class="bar"><div class="fill" style="width:52%"></div></div></div>
+                        <div class="stat-bar"><span>DEF</span><div class="bar"><div class="fill" style="width:55%"></div></div></div>
+                        <div class="stat-bar"><span>SPD</span><div class="bar"><div class="fill" style="width:58%"></div></div></div>
+                        <div class="stat-bar"><span>HP</span><div class="bar"><div class="fill" style="width:50%"></div></div></div>
+                    </div>
+                    <div class="card-build">
+                        <h4>Build Recommande:</h4>
+                        <p><strong>Arme:</strong> Epee Longue / Double Epées</p>
+                        <p><strong>Artefacts:</strong> 4x Set Foudre + 2x Set Vitesse</p>
+                        <p><strong>Stats Prioritaires:</strong> Foudre > Vitesse</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="details-btn" data-char="gilthunder">Voir plus</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <span class="logo"><i class="icon"></i> 7DS ORIGIN HUB</span>
+                    <p>Guide fan-made pour Seven Deadly Sins: Origin</p>
+                </div>
+                <div class="footer-center">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="tierlist.html">Tier List</a></li>
+                        <li><a href="characters.html">Personnages</a></li>
+                        <li><a href="teams.html">Equipes</a></li>
+                        <li><a href="guide.html">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <h4>Elements</h4>
+                    <div class="element-badges">
+                        <span class="elem fire">Feu</span>
+                        <span class="elem water">Eau</span>
+                        <span class="elem earth">Terre</span>
+                        <span class="elem light">Lumiere</span>
+                        <span class="elem dark">Obscurite</span>
+                        <span class="elem wind">Vent</span>
+                        <span class="elem cold">Froid</span>
+                        <span class="elem lightning">Foudre</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Ce site n'est pas affilié à Netmarble. Toutes les images et donnees appartiennent a leurs proprietaires respectifs.</p>
+                <p>© 2026 7DS Origin Hub - v1.0</p>
+            </div>
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
