@@ -1,233 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipes & Compositions - 7DS Origin Hub</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipes - 7DS Origin Hub</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-brand">7DS Origin Hub</div>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="tierlist.html">Tier List</a>
-            <a href="teams.html" class="active">Equipes</a>
-            <a href="builds.html">Builds</a>
-            <a href="guide.html">Guide</a>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="logo-section">
+        <div class="logo-text">7DS Origin Hub</div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-item">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-text">Accueil</span>
+        </a>
+        <a href="tierlist.html" class="nav-item">
+          <span class="nav-icon">📊</span>
+          <span class="nav-text">Tier List</span>
+        </a>
+        <a href="characters.html" class="nav-item">
+          <span class="nav-icon">👤</span>
+          <span class="nav-text">Personnages</span>
+        </a>
+        <a href="teams.html" class="nav-item active">
+          <span class="nav-icon">⚔️</span>
+          <span class="nav-text">Equipes</span>
+        </a>
+        <a href="guide.html" class="nav-item">
+          <span class="nav-icon">📖</span>
+          <span class="nav-text">Guides</span>
+        </a>
+        <a href="codes.html" class="nav-item">
+          <span class="nav-icon">🎁</span>
+          <span class="nav-text">Codes</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="section-header">
+        <h2 class="section-title">Compositions d'Equipes</h2>
+      </section>
+
+      <div class="grid">
+        <div class="card" style="grid-column: span 1;">
+          <h3 class="card-title">Equipe Equilibrée (Starter)</h3>
+          <p class="card-desc" style="margin-bottom: 1rem;">Une équipe polyvalente pour progresser dans l'histoire.</p>
+          <div style="display: flex; gap: 8px;">
+            <div class="char-thumb" data-name="Meliodas">M</div>
+            <div class="char-thumb" data-name="Elizabeth">E</div>
+            <div class="char-thumb" data-name="King">K</div>
+            <div class="char-thumb" data-name="Diane">D</div>
+          </div>
         </div>
-    </nav>
 
-    <header class="page-header">
-        <h1>Equipes & Compositions</h1>
-        <p>Les meilleures compositions d'equipe pour dominer 7DS Origin</p>
-    </header>
+        <div class="card" style="grid-column: span 1;">
+          <h3 class="card-title">Equipe Burst Feu</h3>
+          <p class="card-desc" style="margin-bottom: 1rem;">Maximisez les dégâts élémentaires de feu.</p>
+          <div style="display: flex; gap: 8px;">
+            <div class="char-thumb" data-name="Meliodas">M</div>
+            <div class="char-thumb" data-name="Ban">B</div>
+            <div class="char-thumb" data-name="Jericho">J</div>
+            <div class="char-thumb" data-name="Howzer">H</div>
+          </div>
+        </div>
 
-    <main class="container">
-        <!-- Filter Section -->
-        <section class="filter-section">
-            <div class="filter-controls">
-                <label>Filtrer par:</label>
-                <select id="teamFilter">
-                    <option value="all">Toutes les equipes</option>
-                    <option value="pvp">PvP / Arena</option>
-                    <option value="pve">PvE / Boss</option>
-                    <option value="raid">Raid</option>
-                </select>
-            </div>
-        </section>
-
-        <!-- Team 1: Meta PvP -->
-        <section class="team-card" data-type="pvp">
-            <div class="team-header">
-                <span class="tier-badge tier-s">META</span>
-                <h2>Equipe Meta PvP (Arena)</h2>
-                <p>Composition dominante en Arena avec un equilibre parfait entre controle, dommages et survie.</p>
-            </div>
-
-            <div class="team-roster">
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Elizabeth]</div>
-                    <h3>Elizabeth</h3>
-                    <p class="role">Support / Heal</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> Crit/Dmg + Vitesse<br>
-                        <strong>Artefacts:</strong> 4x Set Vie + 2x Set Vitesse<br>
-                        <strong>Explication:</strong> Votre heal principal. Elizabeth garantit la survie de l'equipe avec ses soins et buffs de defense. Priorite la vitesse pour agir en premier.
-                    </div>
-                </div>
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Meliodas Dragon Mark]</div>
-                    <h3>Meliodas (Dragon Mark)</h3>
-                    <p class="role">DPS / Burst</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> Crit/Dmg + Attaque<br>
-                        <strong>Artefacts:</strong> 4x Set Critique + 2x Set Attaque<br>
-                        <strong>Explication:</strong> Le nuker principal. En forme Dragon, ses degats explosifs eliminent les cibles rapidement. Priorite aux stats de critique.
-                    </div>
-                </div>
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img King]</div>
-                    <h3>King</h3>
-                    <p class="role">Controle / Crowd Control</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> Vitesse + PV<br>
-                        <strong>Artefacts:</strong> 4x Set Vitesse + 2x Set Defense<br>
-                        <strong>Explication:</strong> Controleur de zone. Le piege et les racines immobilisent les ennemis, permettant a Meliodas de frapper sans reponse.
-                    </div>
-                </div>
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Ban]</div>
-                    <h3>Ban</h3>
-                    <p class="role">Tank / Sustain</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> PV + Defense<br>
-                        <strong>Artefacts:</strong> 4x Set Defense + 2x Set Vie<br>
-                        <strong>Explication:</strong> Tank indestructible avec regeneration. Ban absorbe les degats et regenere constamment, ideal pour les combats longs.
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-strategy">
-                <h3>Strategie de l'Equipe</h3>
-                <ul>
-                    <li><strong>Round 1:</strong> King lance son piege pour controler. Elizabeth donne un buff de defense.</li>
-                    <li><strong>Round 2:</strong> Ban tank tout en regenerant. Meliodas charge son Dragon Mark.</li>
-                    <li><strong>Round 3:</strong> Meliodas en forme Dragon decime les ennemis. Elizabeth re-heal si besoin.</li>
-                    <li><strong>Round 4+:</strong> King et Ban maintiennent le controle pendant que Meliodas nettoie.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Team 2: Raid Boss Killer -->
-        <section class="team-card" data-type="raid">
-            <div class="team-header">
-                <span class="tier-badge tier-s">S</span>
-                <h2>Equipe Raid Boss Killer</h2>
-                <p>Specialisee dans les boss raids avec degats monostrike maximum.</p>
-            </div>
-
-            <div class="team-roster">
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Merlin]</div>
-                    <h3>Merlin</h3>
-                    <p class="role">Burst DPS / Magic</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> Crit/Dmg + Attaque Magique<br>
-                        <strong>Artefacts:</strong> 4x Set Magie + 2x Set Critique<br>
-                        <strong>Explication:</strong> DPS magique ultime. Le boost de pouvoir magique augmente considerablement les degats finaux du raid.
-                    </div>
-                </div>
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Escanor]</div>
-                    <h3>Escanor</h3>
-                    <p class="role">Hyper Carry / Scaling</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> Crit/Dmg + Attaque<br>
-                        <strong>Artefacts:</strong> 4x Set Critique + 2x Set Attaque<br>
-                        <strong>Explication:</strong> Le scaling le plus fort du jeu. A midi, ses degats sont devastateurs contre les boss.
-                    </div>
-                </div>
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Hendrickson]</div>
-                    <h3>Hendrickson</h3>
-                    <p class="role">Debuffer / ATK Up</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> Vitesse + PV<br>
-                        <strong>Artefacts:</strong> 4x Set Vitesse + 2x Set Magie<br>
-                        <strong>Explication:</strong> Buffeur d'attaque et debuffer defense. Son ultimate maximise les degats des DPS.
-                    </div>
-                </div>
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Elizabeth]</div>
-                    <h3>Elizabeth</h3>
-                    <p class="role">Support / Buff</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> Vitesse + PV<br>
-                        <strong>Artefacts:</strong> 4x Set Vie + 2x Set Defense<br>
-                        <strong>Explication:</strong> Support polyvalent avec buffs, heals et resurrection. Essentiel pour la survie en raid.</li>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-strategy">
-                <h3>Rotation Raid</h3>
-                <ul>
-                    <li><strong>1:</strong> Hendrickson - Buff ATK + Debuff DEF ennemi</li>
-                    <li><strong>2:</strong> Elizabeth - Buff team + Heal</li>
-                    <li><strong>3:</strong> Merlin - Burst damage maximise avec le boost</li>
-                    <li><strong>4:</strong> Escanor - Cleanup / Finisher</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Team 3: PvE / Story Mode -->
-        <section class="team-card" data-type="pve">
-            <div class="team-header">
-                <span class="tier-badge tier-a">A</span>
-                <h2>Equipe PvE / Story Mode</h2>
-                <p>Equipe equilibree pour progresser dans le mode histoire et les donjons.</p>
-            </div>
-
-            <div class="team-roster">
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Diane]</div>
-                    <h3>Diane</h3>
-                    <p class="role">Tank / AoE</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> PV + Defense<br>
-                        <strong>Artefacts:</strong> 4x Set Defense + 2x Set Vie<br>
-                        <strong>Explication:</strong> Tank avec AoE et controle. Absorbe les degats de plusieurs ennemis.</li>
-                    </div>
-                </div>
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Gowther]</div>
-                    <h3>Gowther</h3>
-                    <p class="role">CC / AoE</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> Vitesse + PV<br>
-                        <strong>Artefacts:</strong> 4x Set Magie + 2x Set Vitesse<br>
-                        <strong>Explication:</strong> Controle de masse. Confusion et sommeil neutralisent les groupes d'ennemis.</li>
-                    </div>
-                </div>
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Guila]</div>
-                    <h3>Guila</h3>
-                    <p class="role">AoE DPS</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> Crit/Dmg + Attaque<br>
-                        <strong>Artefacts:</strong> 4x Set Critique + 2x Set Attaque<br>
-                        <strong>Explication:</strong> DPS AoE constant. Clear rapide des donjons avec ses attaques de zone.</li>
-                    </div>
-                </div>
-                <div class="team-slot">
-                    <div class="char-placeholder">[Img Drole]</div>
-                    <h3>Drole</h3>
-                    <p class="role">Tank / Reflect</p>
-                    <div class="build-summary">
-                        <strong>Build:</strong> PV + Counter<br>
-                        <strong>Artefacts:</strong> 4x Set Vie + 2x Set Contre<br>
-                        <strong>Explication:</strong> Tank avec reflet de degats. Parfait contre les ennemis en groupe.</li>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-strategy">
-                <h3>Approche PvE</h3>
-                <ul>
-                    <li>Diane encaisse les attaques de plusieurs ennemis</li>
-                    <li>Gowther controle la foule avec confusion</li>
-                    <li>Guila nettoie les groupes avec ses AoE</li>
-                    <li>Drole reflect les degats restants</li>
-                </ul>
-            </div>
-        </section>
+        <div class="card" style="grid-column: span 1;">
+          <h3 class="card-title">Equipe Contrôle Glace</h3>
+          <p class="card-desc" style="margin-bottom: 1rem;">Gelez vos adversaires et contrôlez le champ de bataille.</p>
+          <div style="display: flex; gap: 8px;">
+            <div class="char-thumb" data-name="Elizabeth">E</div>
+            <div class="char-thumb" data-name="Merlin">Me</div>
+            <div class="char-thumb" data-name="Gilthunder">Gt</div>
+            <div class="char-thumb" data-name="Griamore">Gr</div>
+          </div>
+        </div>
+      </div>
     </main>
-
-    <footer class="footer">
-        <p>&copy; 2025 7DS Origin Hub - Fan site non officiel</p>
-    </footer>
-
-    <script src="app.js"></script>
+  </div>
 </body>
 </html>
