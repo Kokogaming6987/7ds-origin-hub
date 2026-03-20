@@ -1,100 +1,185 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personnages - 7DS Origin Hub</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnages - 7DS Origin Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="app-container">
-    <aside class="sidebar">
-      <div class="logo-section">
-        <div class="logo-text">7DS Origin Hub</div>
-      </div>
-      <nav class="nav-links">
-        <a href="index.html" class="nav-item">
-          <span class="nav-icon">🏠</span>
-          <span class="nav-text">Accueil</span>
-        </a>
-        <a href="tierlist.html" class="nav-item">
-          <span class="nav-icon">📊</span>
-          <span class="nav-text">Tier List</span>
-        </a>
-        <a href="characters.html" class="nav-item active">
-          <span class="nav-icon">👤</span>
-          <span class="nav-text">Personnages</span>
-        </a>
-        <a href="teams.html" class="nav-item">
-          <span class="nav-icon">⚔️</span>
-          <span class="nav-text">Equipes</span>
-        </a>
-        <a href="guide.html" class="nav-item">
-          <span class="nav-icon">📖</span>
-          <span class="nav-text">Guides</span>
-        </a>
-        <a href="codes.html" class="nav-item">
-          <span class="nav-icon">🎁</span>
-          <span class="nav-text">Codes</span>
-        </a>
-      </nav>
-    </aside>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo-section">
+                <div class="logo-text">7DS Origin Hub</div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Accueil</span>
+                </a>
+                <a href="tierlist.html" class="nav-item">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-text">Tier List</span>
+                </a>
+                <a href="characters.html" class="nav-item active">
+                    <span class="nav-icon">👤</span>
+                    <span class="nav-text">Personnages</span>
+                </a>
+                <a href="teams.html" class="nav-item">
+                    <span class="nav-icon">⚔️</span>
+                    <span class="nav-text">Équipes</span>
+                </a>
+                <a href="builds.html" class="nav-item">
+                    <span class="nav-icon">🛡️</span>
+                    <span class="nav-text">Builds</span>
+                </a>
+                <a href="guide.html" class="nav-item">
+                    <span class="nav-icon">📖</span>
+                    <span class="nav-text">Guides</span>
+                </a>
+                <a href="codes.html" class="nav-item">
+                    <span class="nav-icon">🎁</span>
+                    <span class="nav-text">Codes</span>
+                </a>
+            </nav>
+        </aside>
+        
+        <main class="main-content">
+            <header class="content-header">
+                <div class="header-main">
+                    <h1>Base de données des Personnages</h1>
+                    <div class="search-bar-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Rechercher un héros..." class="search-input">
+                    </div>
+                </div>
+                <p>Explorez la liste complète des héros légendaires et leurs statistiques.</p>
+            </header>
 
-    <main class="main-content">
-      <section class="section-header">
-        <h2 class="section-title">Base de Données des Héros</h2>
-      </section>
+            <div class="filter-tabs">
+                <button class="filter-btn active">Tous</button>
+                <button class="filter-btn">DPS</button>
+                <button class="filter-btn">Tank</button>
+                <button class="filter-btn">Support</button>
+            </div>
 
-      <div class="grid">
-        <!-- Elaine -->
-        <div class="card">
-          <div class="card-icon" style="background: var(--accent-soft); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">🌬️</div>
-          <h3 class="card-title">Elaine (Staff)</h3>
-          <p class="card-desc"><strong>Rôle :</strong> Burst Buffer / Support</p>
-          <p class="card-desc">Augmente massivement l'efficacité de la jauge de Burst de toute l'équipe. Indispensable pour les rotations rapides.</p>
-        </div>
+            <div class="character-grid">
+                <!-- Meliodas -->
+                <div class="char-card">
+                    <div class="char-image meliodas">
+                        <div class="rarity-label">SSR</div>
+                        <div class="element-icon"><i class="fas fa-moon"></i></div>
+                    </div>
+                    <div class="char-details">
+                        <div class="char-header">
+                            <h3>Meliodas</h3>
+                            <span class="role-tag dps">DPS</span>
+                        </div>
+                        <p>Le Capitaine des Sins. Spécialiste du Darkness Burst et des dégâts de zone explosifs.</p>
+                        <div class="char-stats-mini">
+                            <span><i class="fas fa-fire"></i> ATK: S</span>
+                            <span><i class="fas fa-shield-alt"></i> DEF: B</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Meliodas -->
-        <div class="card">
-          <div class="card-icon" style="background: var(--accent-soft); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">🔥</div>
-          <h3 class="card-title">Meliodas (Dual Swords)</h3>
-          <p class="card-desc"><strong>Rôle :</strong> Main DPS</p>
-          <p class="card-desc">Spécialiste du combat rapproché. Son passif augmente les dégâts critiques lorsque la jauge de Burst est active.</p>
-        </div>
+                <!-- Tristan -->
+                <div class="char-card">
+                    <div class="char-image tristan">
+                        <div class="rarity-label">SSR</div>
+                        <div class="element-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="char-details">
+                        <div class="char-header">
+                            <h3>Tristan</h3>
+                            <span class="role-tag dps">DPS</span>
+                        </div>
+                        <p>Polyvalent, utilise les effets de Saignement et peut changer d'arme en plein combat.</p>
+                        <div class="char-stats-mini">
+                            <span><i class="fas fa-fire"></i> ATK: A+</span>
+                            <span><i class="fas fa-bolt"></i> VIT: S</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Jericho -->
-        <div class="card">
-          <div class="card-icon" style="background: var(--accent-soft); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">❄️</div>
-          <h3 class="card-title">Jericho (Dual Swords)</h3>
-          <p class="card-desc"><strong>Rôle :</strong> DPS Burst</p>
-          <p class="card-desc">Peut infliger 'Freeze' avec son attaque spéciale. Sa compétence 'Frozen Saber' permet de se téléporter derrière l'ennemi.</p>
-        </div>
+                <!-- Diane -->
+                <div class="char-card">
+                    <div class="char-image diane">
+                        <div class="rarity-label">SSR</div>
+                        <div class="element-icon"><i class="fas fa-mountain"></i></div>
+                    </div>
+                    <div class="char-details">
+                        <div class="char-header">
+                            <h3>Diane</h3>
+                            <span class="role-tag tank">TANK</span>
+                        </div>
+                        <p>Le Péché de l'Envie. Provocatrice qui devient plus puissante en fonction de sa défense.</p>
+                        <div class="char-stats-mini">
+                            <span><i class="fas fa-shield-alt"></i> DEF: S+</span>
+                            <span><i class="fas fa-heart"></i> HP: A</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Manny -->
-        <div class="card">
-          <div class="card-icon" style="background: var(--accent-soft); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">✨</div>
-          <h3 class="card-title">Manny</h3>
-          <p class="card-desc"><strong>Rôle :</strong> Burst DPS / Debuffer</p>
-          <p class="card-desc">Inflige 'Punishment' forçant des coups critiques. Réduit la résistance élémentaire des ennemis.</p>
-        </div>
+                <!-- King -->
+                <div class="char-card">
+                    <div class="char-image king">
+                        <div class="rarity-label">SSR</div>
+                        <div class="element-icon"><i class="fas fa-leaf"></i></div>
+                    </div>
+                    <div class="char-details">
+                        <div class="char-header">
+                            <h3>King</h3>
+                            <span class="role-tag support">SUPPORT</span>
+                        </div>
+                        <p>Le Roi des Fées. Offre des boucliers et des buffs de zone. Capacité unique de vol.</p>
+                        <div class="char-stats-mini">
+                            <span><i class="fas fa-magic"></i> MAG: S</span>
+                            <span><i class="fas fa-hand-holding-heart"></i> SUP: A</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Drake -->
-        <div class="card">
-          <div class="card-icon" style="background: var(--accent-soft); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">⚡</div>
-          <h3 class="card-title">Drake</h3>
-          <p class="card-desc"><strong>Rôle :</strong> Lightning Amp</p>
-          <p class="card-desc">Augmente la durée du Burst de foudre. Capable de porter Greatsword ou Staff selon le besoin de l'équipe.</p>
-        </div>
+                <!-- Jericho -->
+                <div class="char-card">
+                    <div class="char-image jericho">
+                        <div class="rarity-label">SSR</div>
+                        <div class="element-icon"><i class="fas fa-snowflake"></i></div>
+                    </div>
+                    <div class="char-details">
+                        <div class="char-header">
+                            <h3>Jericho</h3>
+                            <span class="role-tag dps">DPS</span>
+                        </div>
+                        <p>Reine du contrôle par le gel. Augmente ses critiques contre les ennemis gelés.</p>
+                        <div class="char-stats-mini">
+                            <span><i class="fas fa-fire"></i> ATK: A</span>
+                            <span><i class="fas fa-bullseye"></i> CRT: S</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Tioreh -->
-        <div class="card">
-          <div class="card-icon" style="background: var(--accent-soft); border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">🌿</div>
-          <h3 class="card-title">Tioreh</h3>
-          <p class="card-desc"><strong>Rôle :</strong> Healer / Buffer</p>
-          <p class="card-desc">Utilise Wand pour soigner ou Staff pour augmenter la défense de l'équipe face aux dégâts élémentaires.</p>
-        </div>
-      </div>
-    </main>
-  </div>
+                <!-- Tioreh -->
+                <div class="char-card">
+                    <div class="char-image tioreh">
+                        <div class="rarity-label">SSR</div>
+                        <div class="element-icon"><i class="fas fa-fire-alt"></i></div>
+                    </div>
+                    <div class="char-details">
+                        <div class="char-header">
+                            <h3>Tioreh</h3>
+                            <span class="role-tag dps">DPS</span>
+                        </div>
+                        <p>Dégâts de feu à distance. Réduit les résistances élémentaires des ennemis.</p>
+                        <div class="char-stats-mini">
+                            <span><i class="fas fa-fire"></i> ATK: A+</span>
+                            <span><i class="fas fa-tint-slash"></i> DEB: A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
